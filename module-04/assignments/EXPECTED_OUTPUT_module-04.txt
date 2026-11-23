@@ -1,0 +1,37 @@
+===== লেভেল ১ — পণ্য ধরে হিসাব =====
+
+মোট লাইন: 18টা  ·  বাতিল: 2টা  ·  হিসাবে: 16টা
+
+পণ্য ধরে হিসাব
+   Alu 2kg              1টা   ৳207.75
+   Apel 1kg             1টা   ৳1105.00
+   Broiler Murgi 1kg    2টা   ৳609.00
+   Chaa Pata 400g       1টা   ৳232.25
+   Dim 12pc             2টা   ৳441.75
+   Doodh 1L             2টা   ৳651.00
+   Miniket Chal 5kg     4টা   ৳4341.75
+   Peyaj 1kg            1টা   ৳146.50
+   Soybean Oil 2L       2টা   ৳1050.00
+   সব মিলিয়ে           16টা   ৳8785.00
+
+সবচেয়ে বেশি বিক্রি: Miniket Chal 5kg — ৳4341.75 (4টা অর্ডার)
+
+===== লেভেল ২ — CSV =====
+
+লেখা হলো: module-04/output/assignment/sales_week2_clean.csv  (16টা সারি + হেডার)
+লেখা হলো: module-04/output/assignment/item_summary.csv       (9টা সারি + হেডার)
+
+CSV থেকে ফেরত পড়লাম: 16টা record
+সব মিলিয়ে: ৳8785.00   ← মিলে গেছে
+
+===== লেভেল ৩ — JSON =====
+
+লেখা হলো: module-04/output/assignment/report_week2.json
+
+grand_total        = 8785.0   ← type float
+top_item.item_name = Miniket Chal 5kg
+by_item-এ ঘর       = 9টা
+
+CSV-তে float() করতে হয়েছিল, JSON-এ হলো না — কারণ JSON ফাইলেই লেখা
+থাকে কোনটা সংখ্যা আর কোনটা লেখা। CSV-তে সব কমা দিয়ে আলাদা করা লেখা,
+আর কিছুই না।

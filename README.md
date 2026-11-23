@@ -70,7 +70,7 @@ module-03/          সপ্তাহ ৩ — Python Core II ও III: if, loop,
   solution/         ক্লাসের পরে মেলানোর জন্য
   assignments/      মডিউলের শেষের কাজ
 
-module-04/          সপ্তাহ ৪ — dictionary আর ডেটা নিয়ে কাজ
+module-04/          সপ্তাহ ৪ — dictionary, CSV আর JSON
   starter/          যে ফাইলগুলো আপনি পূরণ করবেন
   solution/         ক্লাসের পরে মেলানোর জন্য
   assignments/      মডিউলের শেষের কাজ
