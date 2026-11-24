@@ -65,10 +65,15 @@ module-02/          সপ্তাহ ২ — Git, GitHub, Python-এর শু
   assignments/      ক্লাসের পরের কাজ
   GIT_CHEATSHEET.md
 
-module-03/          সপ্তাহ ৩ — Python Core II: if, loop, list
+module-03/          সপ্তাহ ৩ — Python Core II ও III: if, loop, list, function, module
   starter/          যে ফাইলগুলো আপনি পূরণ করবেন
   solution/         ক্লাসের পরে মেলানোর জন্য
-  assignments/      ক্লাসের পরের কাজ
+  assignments/      মডিউলের শেষের কাজ
+
+module-04/          সপ্তাহ ৪ — dictionary, CSV আর JSON
+  starter/          যে ফাইলগুলো আপনি পূরণ করবেন
+  solution/         ক্লাসের পরে মেলানোর জন্য
+  assignments/      মডিউলের শেষের কাজ
 ```
 
 ---

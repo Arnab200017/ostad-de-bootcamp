@@ -1,0 +1,42 @@
+মোট লাইন: 10টা  ·  বাতিল: 1টা  ·  হিসাবে: 9টা
+
+[১] লেখা হলো: module-04/output/sales_clean.csv
+    প্রথম দুই লাইন —
+      order_id,order_date,customer_name,item_name,quantity,amount,payment,status
+      ORD100045,2026-10-07,Rahim Uddin,Miniket Chal 5kg,2,1240.5,bkash,delivered
+
+[২] csv.reader দিয়ে পড়লে সব ঘর string হয়ে আসে
+      হেডার   : order_id, order_date, ...
+      amount  : '1240.5'   ← type str
+      '1240.5' + 1 করলে Python দুইটা লেখা জোড়া দেবে, যোগ করবে না
+
+[৩] csv.DictReader দিয়ে ফেরত পেলাম 9টা record
+      back[0]['customer_name'] = Rahim Uddin
+      back[0]['amount']        = 1240.5   ← type float
+
+[৪] payment ধরে হিসাব — ফাইল ঘুরে এলেও সংখ্যা এক
+      bkash              3টা   ৳2484.00
+      card               1টা   ৳812.00
+      cash on delivery   2টা   ৳661.50
+      nagad              2টা   ৳908.00
+      rocket             1টা   ৳232.25
+      সব মিলিয়ে         9টা   ৳5097.75
+
+[৫] লেখা হলো: module-04/output/summary_by_payment.csv
+
+[৬] লেখা হলো: module-04/output/summary.json
+    ভেতরে দেখতে এরকম —
+      "grand_total": 5097.75,
+      "by_payment": { "bkash": 2484.0, ... }
+
+[৭] JSON ফেরত পড়লাম — CSV-র সাথে তফাতটা এখানে
+      grand_total = 5097.75   ← type float, নিজে বদলাতে হলো না
+      by_payment['bkash'] = 2484.0
+      by_payment-এর ভেতরে 5টা ঘর — CSV-তে এই বাসা বানানো যায় না
+
+[বোনাস] নামের ভেতরে কমা থাকলে কী হয়
+      csv module       : Chal, Miniket 5kg (new pack)
+      হাতে split(',')  : "Chal
+      হাতে split-এ ঘর হয় 5টা, অথচ হেডারে ঘর ৪টা
+
+এই কারণেই csv module. নিজে split করলে একদিন না একদিন ভাঙবেই।

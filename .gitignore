@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.vscode/
+*.zip
+
+# ক্লাসে তৈরি হওয়া ফাইল — কোড রাখি, কোডের ফলাফল না
+module-04/output/
+week-*/output/
